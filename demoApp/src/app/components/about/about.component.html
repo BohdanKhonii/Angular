@@ -1,0 +1,12 @@
+<p>about works!</p>
+<input type="text" #inputFirstName>
+<input type="text" #inputLastName>
+<button (click)="showName(inputFirstName.value,inputLastName.value)">Show</button>
+Your name {{ sum }}
+<input #arg1 placeholder="arg1">
+<input #arg2 placeholder="arg2">
+<button (click)="sumArgs(arg1.value,arg2.value)">get sum</button>{{Sum}}
+<!-- <p [ngClass]="{'blue': color==true, 'yellow': color==false}">
+    Text
+</p> -->
+<input [(ngModel)] = "name" placeholder="Input">{{name}}
